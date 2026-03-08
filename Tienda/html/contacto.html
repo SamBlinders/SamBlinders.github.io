@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL F1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="../images/Logo.png" type="image/png">
+    <link rel="stylesheet" href="../css/generico.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+</head>
+
+<body>
+    <header>
+        <div class="contenedor-logo">
+            <img src="/ALUMNOS_MATERIAL/ALUMNOS_MATERIAL/RECURSOS/images/Logo.png" alt="Logo de ALL F1">
+            <h3>ALL <span>F1</span></h3>
+        </div>
+        <div class="contenedor-menu">
+            <nav>
+                <a class="btn btn-inicio" href="../index.html">INICIO</a>
+                <a class="btn btn-tienda" href="tienda.html">TIENDA</a>
+                <a class="btn btn-nosotros" href="nosotros.html">NOSOTROS</a>
+                <a class="btn btn-contacto" href="#">CONTACTO</a>
+            </nav>
+        </div>
+        <div class="contenedor-botones">
+            <a class="btns login">
+                <i class="fa-solid fa-user"></i>
+                Login
+            </a>
+            <a class="btns register">
+                <i class="fa-solid fa-user-plus"></i>
+                Register
+            </a>
+        </div>
+    </header>
+    <main>
+        <h2>CONTACTO</h2>
+        <section class="section contacto">
+            <div class="contacto-info">
+                <h3 class="duda">¿TIENES ALGUNA DUDA?</h3>
+                <p class="introduccion">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p class="texto-contacto">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Ipsa reiciendis qui eius, accusantium alias praesentium aspernatur,
+                    inventore dolore repudiandae eligendi commodi architecto doloribus!
+                    Repellat quisquam deleniti perspiciatis ex similique enim.</p>
+
+                <h3 class="email">E-Mail</h3>
+                <a href="mailto:info@ALLF1.es?subject=Consulta%20desde%20la%20web%20ALLF1" class="correo-electronico">
+                    <i class="fa-solid fa-envelope"></i>info@ALLF1.es
+                </a>
+
+                <h3 class="red-social">Redes Sociales</h3>
+                <div class="contacto-redes">
+                    <div class="redes whatsApp">
+                        <img src="../images/contacto/WhatsApp.svg.webp" alt="WhatsApp">
+                    </div>
+                    <div class="redes twitter">
+                        <img src="../images/nosotros/twitter-icon.png" alt="Twitter">
+                    </div>
+                    <div class="logo">
+                        <img class="logo" src="../images/Logo.png" alt="Logo empresas">
+                    </div>
+                    <div class="redes instagram">
+                        <img src="../images/nosotros/instagram-logo.png" alt="Instagram">
+                    </div>
+                    <div class="redes facebook">
+                        <img src="../images/nosotros/facebook-icon.png" alt="Facebook">
+                    </div>
+                    <div class="redes telegram">
+                        <img src="../images/contacto/Telegram_2019_Logo.svg.png" alt="Telegram">
+                    </div>
+                </div>
+            </div>
+            <div class="caja-formulario">
+                <form class="formulario" action="#" method="post">
+
+                    <input type="text" name="nombre" placeholder="Nombre" required minlength="2"
+                        title="Debe tener minimo 2 digitos">
+
+                    <input type="email" id="email" name="email" placeholder="E-Mail (direccions@email.com)" required>
+
+                    <input type="tel" name="telefono" placeholder="Teléfono (XXX XXX XXX)" required pattern="[0-9]{9}"
+                        title="El Teléfono debe tener 9 digitos númericos">
+
+                    <select name="tema" required>
+                        <option value="" disabled selected>TEMA</option>
+                        <option value="devoluciones">Devoluciones</option>
+                        <option value="envios">Problemas de envío</option>
+                        <option value="otros">Otras dudas</option>
+                    </select>
+
+                    <textarea name="mensaje" placeholder="Mensaje" rows="6" required></textarea>
+
+                    <div class="caja-condiciones">
+                        <input type="checkbox" id="condiciones" name="condiciones" required>
+                        <label for="condiciones">Aceptar <a href="../pdf/condiciones.pdf">condiciones</a></label>
+                    </div>
+                    <button type="submit" class="btn-enviar">
+                        <i class="fa-solid fa-paper-plane"></i> Enviar
+                    </button>
+
+                </form>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="cont nosotros">
+            <h4>Compañía</h4>
+            <ul>
+                <li><a href="html/nosotros.html">Nosotros</a></li>
+                <li><a href="#">Nuestros Servicios</a></li>
+                <li><a href="#">Politica Privacidad</a></li>
+                <li><a href="#">Afiliate</a></li>
+            </ul>
+        </div>
+        <div class="cont ayuda">
+            <h4>Ayuda</h4>
+            <ul>
+                <li><a href="#">Preguntas</a></li>
+                <li><a href="#">Compras</a></li>
+                <li><a href="#">Envíos</a></li>
+                <li><a href="#">Afiliate</a></li>
+                <li><a href="#">Pago</a></li>
+            </ul>
+        </div>
+        <div class="cont tienda">
+            <h4>Tienda</h4>
+            <ul>
+                <li><a href="#">Ropa</a></li>
+                <li><a href="#">Zapatos</a></li>
+                <li><a href="#">Teléfonos</a></li>
+                <li><a href="#">Pantallas</a></li>
+            </ul>
+        </div>
+        <div class="siguenos">
+            <h4>Siguenos</h4>
+            <div class="cont siguenos">
+                <a class="siguenos-face" href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a class="siguenos-insta" href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a class="siguenos-x" href="https://x.com/" target="_blank">
+                    <i class="fa-brands fa-x"></i>
+                </a>
+                <a class="siguenos-link" href="https://es.linkedin.com/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

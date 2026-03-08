@@ -1,0 +1,213 @@
+/*Parte principal: carrusel*/
+
+
+.carrusel-main { 
+    width: 90%;               
+    max-width: 1200px;         
+    margin: 30px auto;       
+    height: 600px;            
+    background-color: #1a1a1a; 
+    position: relative;
+    overflow: hidden;  
+}
+
+.carrusel-track{
+   display: flex;
+    width: 200%; 
+    height: 100%;
+    animation: autoScroll 5s infinite; 
+}
+
+@keyframes autoScroll {
+    0%, 45% {
+        
+        transform: translateX(0%); 
+    }
+    50%, 95% {
+        
+        transform: translateX(-50%); 
+    }
+    100% {
+        transform: translateX(0%); 
+    }
+}
+
+
+.hero-zapatilla{
+    width: 50%; 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 4%;
+    box-sizing: border-box;
+    
+}
+
+.imagen {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen img{
+    max-width: 90%;
+    max-height: 400px;
+    object-fit: contain;
+    filter: drop-shadow(0px 15px 20px rgba(0,0,0, 0.6)); 
+}
+
+.descripcion{ 
+    width: 50%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 30px;
+}
+
+h2{
+    text-align: center;
+    color: orangered;
+    font-size: 30px;
+    margin: 0 0 10px 0;
+}
+
+#hero-introduccion {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+    color: #aaa;             
+    text-align: center;
+}
+
+#hero-texto{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    text-align:center;
+    margin: 0 0 30px 0;
+}
+
+
+.descripcion a{
+    display: flex;
+    align-self: center;
+    color: white;
+    font-size:medium;
+    text-decoration: none; 
+    font-weight: bold;
+    border: 2px solid black;
+    background-color: black;
+    transition: 0.3s ease;
+}
+
+.descripcion a:hover {
+    background-color: #ff4d4d; 
+}
+
+.descripcion i{
+    margin-right: 0.5rem;
+}
+
+/*Parte secundaria: secciones y galeria*/
+
+.seccion-inferior {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 1rem;   
+}
+
+.info-izq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info-izq h2{
+    display: flex;
+    align-self: flex-start;
+    margin-left: 1%;
+}
+
+#introduccion{
+    display: flex;
+    align-self: flex-start;
+    font-size: medium;
+    font-weight: bold;
+    margin: 1%;
+}
+
+#texto{
+    display: flex;
+    align-self: flex-start;
+    font-size: small;
+    text-align:justify;
+    margin: 1%;
+}
+
+.info-izq a{
+    display: flex;
+    align-self: flex-end;
+    color: white;
+    font-size:medium;
+    text-decoration: none; 
+    font-weight: bold;
+    border: 2px solid black;
+    background-color: black;
+    padding: 0.5rem;
+}
+
+.info-izq i{
+    display: flex;
+    align-self: center;
+    margin-right: 0.5rem;
+}
+
+
+.galeria-derecha {
+    display: flex; 
+    gap: 20px;    
+    justify-content: center;
+}
+
+.galeria-derecha img{
+    max-width: 30%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+    transition: transform 0.3s ease;
+}
+
+.galeria-derecha img:hover {
+    transform: translateY(-5px); 
+}
+
+/*Botones carrusel*/
+.btn.flecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+    background-color: rgba(220, 167, 45, 0.8); 
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%; 
+    cursor: pointer;
+    z-index: 10; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.btn.flecha:hover {
+    background-color: rgba(220, 167, 45, 1);
+}
+
+.btn.flecha.izq { left: 15px; }
+.btn.flecha.derecha { right: 15px; }

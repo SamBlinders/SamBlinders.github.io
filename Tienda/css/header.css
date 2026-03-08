@@ -1,0 +1,104 @@
+header {
+    /* 1. Ponemos las 3 cajas en horizontal */
+    display: flex; 
+    
+    /* 2. Empujamos las cajas para que se separen a los extremos */
+    justify-content:space-between; 
+    
+    /* 3. Centramos todo verticalmente para que quede bonito */
+    align-items: center; 
+    
+    /* 4. Le damos un poco de espacio por dentro (arriba/abajo y lados) */
+    padding: 15px 40px; 
+    
+    /* Colores oscuros como en tu logo de ALL F1 */
+    background-color:rgb(12, 79, 0); 
+    color: white; 
+}
+
+/* El logo por dentro también necesita Flexbox para alinear la imagen y el texto h1 */
+.contenedor-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contenedor-logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.contenedor-logo span{
+    font-weight: normal;
+    color: goldenrod;
+}
+
+/* Ahora arreglamos tu menú para que los enlaces se pongan en horizontal */
+nav {
+    display: flex;
+    gap: 20px; /* Separación entre cada botón del menú */
+}
+
+/* Le quitamos el subrayado feo a los enlaces del menú y los ponemos blancos */
+nav a {
+    color: white;
+    text-decoration: none; 
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: black;
+
+}
+
+.btns{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid white;
+    border-radius:5% 5%;
+}
+
+a.btns{
+    color:white;
+}
+
+a.btns:hover{
+    background-color:goldenrod;
+}
+
+.btns.register {
+    background-color:black;
+}
+
+@media (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+        align-items: center; 
+        gap: 20px;           
+        padding: 20px;      
+    }
+    
+    .btns {
+        display: none;       
+    }
+
+    header nav ul {          
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        gap: 15px;          
+        padding: 0;          
+    }
+
+}
+
+
+
+
+
+
+
+
+
